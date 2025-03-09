@@ -33,9 +33,11 @@
 - name: copy expense config
   ansible.builtin.template:  # it will search for template folder
     src: expense.conf.j2
-    dest: /etc/nginx/default.d/expense.conf.j2
+    dest: /etc/nginx/default.d/expense.conf
+  notify: 
+  - Restart Nginx
 
-- name: restart nginx
-  ansible.builtin.service:
-    name: nginx
-    state: restarted
+# - name: restart nginx
+#   ansible.builtin.service:
+#     name: nginx
+#     state: restarted
