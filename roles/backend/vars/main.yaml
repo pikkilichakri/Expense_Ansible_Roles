@@ -1,6 +1,5 @@
-BACKEND_HOST: 10.0.0.81
+#BACKEND_HOST: backend.omnamahashivaya.online
 MYSQL_USER: root
-MYSQL_ROOT_PASSWORD: ExpenseApp@1
-MYSQL_HOST: 10.0.0.115
+MYSQL_ROOT_PASSWORD: ExpenseApp1
 APP_LOCATION: /app
 COMPONENT: backend
